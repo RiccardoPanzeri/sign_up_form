@@ -21,7 +21,7 @@
             <h2 class="header" id="header2"><strong>Registrati <span class="orange"><em>ora</em></span> e dai vita al tuo progetto.</strong></h2>    
         </div>
         <div id="formDiv">
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <h3 class="header formHeader">Diamoci da fare!</h3>
                 
                 <div class="fieldDiv">
@@ -41,24 +41,24 @@
                     </subfieldDiv>
                     <div class="subFieldDiv">
                         <p><label for="lastName">Telefono</label></p>
-                        <p><input type="text" id="lastName" name="userName"></p>
+                        <p><input type="tel" id="tel" name="userTel"></p>
                     </div>
                 </div>  
                 <div class="fieldDiv">
                     <subfieldDiv class="subFieldDiv">
-                        <p><label for="firstName">Password <span aria-label="required">*</span></label></p>
-                        <p><input type="text" id="firstName" name="userName" required></p>
+                        <p><label for="password">Password <span aria-label="required">*</span></label></p>
+                        <p><input type="password" id="password" name="userPassword" class="password" required></p>
                     </subfieldDiv>
                     <div class="subFieldDiv">
-                        <p><label for="lastName">Conferma Password <span aria-label="required">*</span></label></p>
-                        <p><input type="text" id="lastName" name="userName" required></p>
+                        <p><label for="confirmPswd">Conferma Password <span aria-label="required" >*</span></label></p>
+                        <p><input type="password" id="confirmPswd" name="confirmPswd"  class="password" required></p>
                     </div>
                 </div>    
             </form>
             
         </div>
         <div id="submitDiv">
-            <button type="submit" class="button orange">Invia</button>
+            <button type="submit" class="button" form="form">Invia</button>
             <p>Hai già un account? <a href=""  rel="noopener noreferrer" class="orange">Accedi</a></p>
         </div>
         

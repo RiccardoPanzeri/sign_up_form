@@ -154,6 +154,12 @@ body>div{
 
 }
 
+#logoContainerDiv:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+    border-color: white;
+    
+}
+
 #logoContainerDiv>img{
     flex-shrink: 0;
     height: 120px;
@@ -225,6 +231,10 @@ a{
     
 }
 
+a:active{
+    color: black;
+}
+
 .formHeader{
    
    margin-left: 0px;
@@ -266,6 +276,21 @@ input{
     
 }
 
+input:focus{
+    background-color: rgba(121, 118, 118, 0.795);
+}
+
+
+input:focus:invalid[class="password"],input:focus:invalid[id="email"]{
+    
+    background-color: rgba(206, 9, 9, 0.575);
+    border-style: double;
+}
+
+input:focus:valid:required{
+    background-color: rgba(8, 241, 8, 0.664);
+}
+
 form{
     max-width: 100%;
     
@@ -277,4 +302,10 @@ form{
     background: linear-gradient(to right, black, orange, black);
     border-radius: 12%;
 
+}
+
+.button:active{
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.267);
+    background: rgba(0, 0, 0, 0.705);
 }

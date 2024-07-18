@@ -35,14 +35,15 @@ html{
 }
 
 :root{
-    --backgroundColor:rgba(255, 123, 0, 0.603);
+    --logoBackgroundColor:rgba(255, 123, 0, 0.603);
     --logoTextShadow:-2px -2px 0 rgb(169, 169, 169), 
     2px -2px 0 rgb(169, 169, 169), 
     -2px 2px 0 rgba(0, 0, 0, 0.384), 2px 2px 0 black;
     --logoBorderColor:rgba(122, 119, 119, 0.767);
     --logoFontColor: rgb(37, 36, 36);
     --headerFontColor:rgb(240, 231, 231);
-
+    --backgroundColor:rgb(54, 54, 54);
+    --formBackgroundColor:rgb(121, 113, 113);
 }
 
 body{
@@ -55,48 +56,61 @@ body{
 body>div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    
+    
 }
 
 #backgroundDiv{
-    display: flex;
-    flex-direction: column;
+    
     justify-content: flex-start;
     align-items: center;
     padding-top: 100px;
-    
+    align-items: center;
     background-image: url(./img/altumcode-oZ61KFUQsus-unsplash.jpg);
     background-size:cover;
     background-position:center;
     width: 40%;
     min-width: 40%;
     overflow:hidden;
+    
 }
 
 #mainDiv{
-    display: flex;
-    justify-content: space-between;
+    
+    
     width: 60%;
+    max-width: 60%;
+    
+    
+    
     
 }
 
 #formDiv{
 
-    height:30%;
+    height:40%;
     width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--formBackgroundColor);
+    
 }
 
-#headerDiv, #submitDiv{
-    height: 35%;
-    width:100%;
-    display:flex;
-    
-    align-items: center;
 
+
+#submitDiv{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--backgroundColor);
+    margin-top: auto;
+    height: 30%;
+    width: 100%;
+    gap:2%;
+    overflow: hidden;
 }
 
 
@@ -104,10 +118,13 @@ body>div{
     display: flex;
     flex-direction: column;
     text-align: left;
-    
-    background-color: rgb(54, 54, 54);
+    height: 40%;
+    width:100%;
+    background-color: var(--backgroundColor);
     max-width: 100%;
     overflow:hidden;
+    
+    
 }
 
 #logoContainerDiv{
@@ -121,7 +138,7 @@ body>div{
     align-items: center;
     flex-basis: auto;
     padding-top: 15px;
-    background-color: var(--backgroundColor);
+    background-color: var(--logoBackgroundColor);
     flex-shrink: 1;
     text-align: center;
     
@@ -160,12 +177,40 @@ body>div{
     margin-left: 40px;
     margin-right: 10px ;
     align-self: flex-start;
-    flex-basis: auto;
-    margin-top: 3%;
+    
+    flex-shrink: 0;
+    margin-top: 6%;
+    
     color: var(--headerFontColor);
     word-break: none;
 }
 
+#header2{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
 .orange{
     color: orange;
+}
+
+.button{
+    width: 160px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    
+}
+
+#submitDiv>p{
+    justify-self: flex-end;
+    color: var(--headerFontColor);
+    margin-left: 50px;
+}
+
+
+a{
+    text-decoration: none;
+    
 }

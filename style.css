@@ -96,10 +96,11 @@ body>div{
     max-width: 100%;
     display:flex;
     align-items: center;
-   flex-shrink: 1;
+    flex-shrink: 1;
     background-color: var(--formBackgroundColor);
     padding-left: 10%;
     overflow: hidden;
+    padding-bottom: 2px;
     
 }
 
@@ -275,6 +276,9 @@ label{
 
 input{
     width: 200px;
+    border-radius: 20%;
+    height: 20px;
+    background-color: rgb(224, 221, 221);
     
 }
 

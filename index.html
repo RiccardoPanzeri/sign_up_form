@@ -47,11 +47,11 @@
                 <div class="fieldDiv">
                     <subfieldDiv class="subFieldDiv">
                         <p><label for="password">Password <span aria-label="required">*</span></label></p>
-                        <p><input type="password" id="password" name="userPassword" class="password" required></p>
+                        <p><input type="password" id="password" name="userPassword" class="password" minlength="8" maxlength="30" pattern="^\w+\d+[!?$%&^@#*]+(.)?*" required></p>
                     </subfieldDiv>
                     <div class="subFieldDiv">
                         <p><label for="confirmPswd">Conferma Password <span aria-label="required" >*</span></label></p>
-                        <p><input type="password" id="confirmPswd" name="confirmPswd"  class="password" required></p>
+                        <p><input type="password" id="confirmPswd" name="confirmPswd"  class="password"  minlength="8" maxlength="30" pattern="^\w+\d+[!?$%&^@#*]+(.)?*"required></p>
                     </div>
                 </div>    
             </form>
